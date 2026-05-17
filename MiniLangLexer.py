@@ -3,6 +3,7 @@ import ply.lex as lex
 # tokens para uso en gramatica
 tokens = (
     'CONST',
+    'VOID',
     'ID', 
     'NUM_INT', 
     'NUM_FLOAT', 
@@ -42,7 +43,7 @@ tokens = (
 )
 
 RESERVADAS = {
-    'int': 'INT', 'float': 'FLOAT', 'string': 'STRING', 'bool': 'BOOL', 'const': 'CONST',
+    'int': 'INT', 'float': 'FLOAT', 'string': 'STRING', 'bool': 'BOOL', 'const': 'CONST', 'void': 'VOID', 
     'if': 'IF', 'else': 'ELSE', 'while': 'WHILE', 'Read': 'READ', 'Write': 'WRITE', 
     'true': 'TRUE', 'false': 'FALSE', 'return': 'RETURN', 'and': 'AND', 'not': 'NOT', 'or': 'OR'
 }
